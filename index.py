@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 print("content-type:text/html; charset=utf-8\n")
+import cgi
+form = cgi.FieldStorage()
+pageId = form["id"].value
 print('''
 <!DOCTYPE html>
 <html lang="en">
@@ -35,8 +38,8 @@ print('''
                 <li>Git</li>
             </ol>
     </ol>
-    <h2>Dev Blog</h2>
+    <h2>{title}</h2>
     <p>I would like to be a programmer.</p>
 </body>
 </html>
-''')
+'''.format(title=pageId))
