@@ -6,9 +6,10 @@ form = cgi.FieldStorage()
 
 if 'id' in form:
     pageId = form["id"].value
+    description = open('data/'+pageId+'.html', 'r').read()
 else:
     pageId = 'Dev Blog'
-
+    description = 'Hello, blog'
 
 print('''
 <!DOCTYPE html>
@@ -46,7 +47,7 @@ print('''
             </ol>
     </ol>
     <h2>{title}</h2>
-    <p>I would like to be a programmer.</p>
+    <p>{desc}</p>
 </body>
 </html>
-'''.format(title=pageId))
+'''.format(title=pageId, desc=description))
