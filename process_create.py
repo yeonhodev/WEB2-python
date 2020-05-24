@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-print("content-type:text/html; charset=utf-8\n")
 
 import cgi
 
@@ -11,3 +10,5 @@ opened_file = open('data/'+title+'.html', 'w')
 opened_file.write(description)
 
 #Redirection
+print("Location: index.py?id="+title)
+print()
