@@ -26,3 +26,10 @@ if "keyC" in dictionary1:
     print(dictionary1["keyC"])
 else:
     print("No keyC is in dictionary1")
+
+#Another way to get value from dictionary and check with if
+
+if dictionary1.get("keyC"):
+    print("No keyC in dictionary1")
+else:
+    dictionary1.get("keyC")
