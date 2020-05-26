@@ -20,3 +20,9 @@ del dictionary1["keyB"]
 print()
 for key in dictionary1: 
     print("{} : {}".format(key, dictionary1[key]))
+
+#Check if there is a key in dictionary to avoid an error message
+if "keyC" in dictionary1:
+    print(dictionary1["keyC"])
+else:
+    print("No keyC is in dictionary1")
