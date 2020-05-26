@@ -33,3 +33,16 @@ if dictionary1.get("keyC"):
     print("No keyC in dictionary1")
 else:
     dictionary1.get("keyC")
+
+#Add a new dictionary
+pets = [
+    {"name": "구름", "age": 5 },
+    {"name": "초코", "age": 3 },
+    {"name": "아지", "age": 2 },
+    {"name": "호랑이", "age": 1 }
+]
+print()
+print("# 우리 동네 애완 동물들")
+for pet in pets:
+    print("{} {}살".format(pet["name"], pet["age"]))
+
