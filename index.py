@@ -56,6 +56,8 @@ print('''
     <ol>
         {listStr}
     </ol>
+    <a href="create.py">create</a>
+    <a href="update.py">update</a>
     <h2>{title}</h2>
     <p>{desc}</p>
 </body>
